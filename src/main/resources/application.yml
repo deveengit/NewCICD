@@ -1,0 +1,17 @@
+server:
+  port: 8002
+
+spring:
+  datasource:
+    username: admin
+    password: password
+    url: jdbc:mysql://cicdlocation.czpiaqkx2qvf.us-east-2.rds.amazonaws.com/locdb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
